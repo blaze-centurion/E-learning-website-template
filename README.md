@@ -28,7 +28,7 @@ To run the website on your local machine.
 Clone the repo in your local machine
 
 ```bash
-  git clone http:///
+  git clone https://github.com/blaze-centurion/E-learning-website-template.git
 ```
 
 Then install all the dependencies.
