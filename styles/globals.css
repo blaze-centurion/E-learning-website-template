@@ -1,16 +1,68 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Roboto:wght@300;400&display=swap");
+
+:root {
+	--montserrat: "Montserrat", sans-serif;
+	--primary: #4dc591;
+	--primaryDark: #53b58b;
+	--secondary: #9ba1ff;
+	--tertiary: #ff7648;
+	--lightGray: #efefef;
+	--darkMainText: #191b32;
+	--mainText: #2f374b;
+	--bodyText: #9295a3;
+	--primaryGradient: linear-gradient(
+		to bottom,
+		rgb(140, 239, 206) 15%,
+		rgb(187, 244, 229) 43%,
+		rgb(170, 255, 225) 88%
+	);
+	--secondaryGradient: linear-gradient(
+		to top,
+		rgb(145, 151, 238) 23%,
+		rgb(183, 187, 247) 77%
+	);
+	--tertiaryGradient: linear-gradient(
+		90deg,
+		rgba(255, 118, 72, 1) 0%,
+		rgba(255, 161, 130, 1) 46%,
+		rgba(231, 120, 83, 1) 100%
+	);
+	--mixedGradient: linear-gradient(
+		to bottom,
+		rgb(95, 185, 175) 10%,
+		rgb(123, 166, 219) 71%,
+		rgb(158, 181, 240) 92%
+	);
+	--accordion-header-height: 60px;
+	--accordion-item-height: 50px;
+}
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	font-family: var(--montserrat);
+	box-sizing: border-box;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	text-decoration: none;
+	color: inherit;
 }
 
-* {
-  box-sizing: border-box;
+.swiper-button-next,
+.swiper-button-prev {
+	color: var(--primary) !important;
+	background: white !important;
+	border-radius: 50% !important;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1) !important;
+	width: 40px !important;
+	height: 40px !important;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+	font-size: 15px !important;
+}
+.swiper-pagination-bullet-active {
+	background-color: var(--primary) !important;
 }

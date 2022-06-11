@@ -1,0 +1,203 @@
+.topContainer {
+	display: flex;
+	flex-direction: column;
+	background: #f5f7fd;
+	padding: 1rem 8rem;
+	padding-bottom: 0;
+}
+.topContainer .banner {
+	padding: 1rem 0;
+	padding-bottom: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.topContainer .banner div:nth-child(1) {
+	flex: 1;
+}
+.topContainer .banner .title {
+	font-size: 2rem;
+	color: var(--mainText);
+	margin: 10px 0;
+}
+.topContainer .banner .subtitle {
+	color: #333;
+	font-size: 15px;
+}
+.btn {
+	border: none;
+	outline: none;
+	background: var(--primary);
+	color: #fff;
+	font-size: 14px;
+	font-weight: 500;
+	padding: 15px 20px;
+	margin: 15px 0;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 0.3s;
+}
+.btn:hover {
+	background: var(--tertiary);
+}
+
+.topContainer .banner .imgBox {
+	position: relative;
+	width: 50%;
+	height: 300px;
+	margin-left: 10px;
+}
+
+.section {
+	padding: 2rem 0;
+	padding-bottom: 1rem;
+}
+.coloredSection {
+	background: #f5f7fd;
+}
+.section .sectionTitle {
+	font-size: 1.8rem;
+	text-align: center;
+	text-transform: capitalize;
+	color: var(--mainText);
+}
+
+.cardBox {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 2rem 6rem;
+	place-items: center;
+}
+.cardBox .card {
+	width: 100%;
+	text-align: center;
+	padding: 40px 30px 30px;
+	border-radius: 10px;
+	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+	margin: 10px;
+}
+.cardBox .card:hover {
+	background-color: #ffffff;
+	box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.05);
+}
+.cardBox .card .title {
+	font-size: 1.2rem;
+	color: #222;
+	text-transform: capitalize;
+	margin: 8px 0;
+}
+.cardBox .card .numberTitle {
+	color: var(--primary);
+	font-size: 2rem;
+	margin: 10px 0;
+}
+.cardBox .card .subtitle {
+	text-transform: uppercase;
+	color: #888;
+	font-size: 15px;
+}
+
+.cardBox .card .desc {
+	color: #333;
+	font-size: 14px;
+}
+
+.bottomTitle {
+	text-align: center;
+	margin-top: 1.2rem;
+	font-size: 2.3rem;
+	color: var(--primary);
+}
+.bottomSubTitle {
+	text-align: center;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	font-size: 1.1rem;
+	color: var(--mainText);
+}
+.alignCenter {
+	text-align: center;
+}
+
+@media (max-width: 1200px) {
+	.topContainer {
+		padding: 1rem 2rem;
+	}
+	.cardBox {
+		padding: 2rem 4rem;
+	}
+}
+@media (max-width: 1000px) {
+	.cardBox {
+		padding: 2rem;
+		grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+		place-items: center;
+	}
+	.cardBox .card {
+		margin-inline: auto;
+	}
+	.coloredSection .cardBox {
+		grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	}
+	.bottomTitle {
+		font-size: 2rem;
+	}
+	.bottomSubTitle {
+		font-size: 1rem;
+	}
+	.section .sectionTitle {
+		font-size: 1.7rem;
+	}
+}
+@media (max-width: 840px) {
+	.topContainer .banner .imgBox {
+		width: 100%;
+		height: calc(100vw / 2.2);
+		margin-top: 20px;
+	}
+
+	.topContainer .banner {
+		display: grid;
+		grid-template-columns: 1fr;
+	}
+}
+@media (max-width: 430px) {
+	.topContainer .banner .title {
+		font-size: 1.7rem;
+	}
+	.topContainer .banner .subtitle {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 550px) {
+	.cardBox .card .title:not(.numberTitle) {
+		font-size: 19px;
+	}
+	.bottomTitle {
+		font-size: 1.7rem;
+		padding: 0 10px;
+	}
+	.bottomSubTitle {
+		font-size: 15px;
+	}
+	.section .sectionTitle {
+		font-size: 1.4rem;
+	}
+}
+@media (max-width: 450px) {
+	.bottomTitle {
+		font-size: 1.6rem;
+	}
+	.cardBox {
+		grid-template-columns: 1fr !important;
+	}
+}
+@media (max-width: 380px) {
+	.cardBox {
+		padding: 2rem 1rem;
+	}
+	.topContainer {
+		padding: 1rem;
+	}
+}
