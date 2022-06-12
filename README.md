@@ -29,6 +29,8 @@ Clone the repo in your local machine
 
 ```bash
   git clone https://github.com/blaze-centurion/E-learning-website-template.git
+
+  cd E-learning-website-template
 ```
 
 Then install all the dependencies.
